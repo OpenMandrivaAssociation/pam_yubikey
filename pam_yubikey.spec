@@ -1,7 +1,7 @@
 Summary:	Provides support for One Time Passwords (OTP) authentication
 Name:		pam_yubikey
 Version:	1.0.4
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	GPLv2
 Group:		System/Libraries
 URL:		http://www.securixlive.com/yubikey/
