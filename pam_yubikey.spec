@@ -1,11 +1,12 @@
 Summary:	Provides support for One Time Passwords (OTP) authentication
 Name:		pam_yubikey
 Version:	1.0.4
-Release:	%mkrel 6
+Release:	7
 License:	GPLv2
 Group:		System/Libraries
 URL:		http://www.securixlive.com/yubikey/
 Source0:	http://www.securixlive.com/download/yubikey/YubiPAM-%{version}.tar.gz
+Patch1:		pam_yubikey-rlimit.patch
 BuildRequires:  pam-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
@@ -17,6 +18,7 @@ token. YubiPAM aims to be a simple, easy to configure, module for the Yubikey.
 %prep
 
 %setup -q -n YubiPAM-%{version}
+%patch1 -p1
 
 %build
 %serverbuild

@@ -1,0 +1,22 @@
+diff -Naurp YubiPAM-1.0.4/src/pam_yubikey.c YubiPAM-1.0.4.dlucio/src/pam_yubikey.c
+--- YubiPAM-1.0.4/src/pam_yubikey.c	2008-09-25 03:41:45.000000000 -0500
++++ YubiPAM-1.0.4.dlucio/src/pam_yubikey.c	2012-09-22 17:34:09.557894819 -0500
+@@ -37,6 +37,7 @@
+ #include <stdlib.h>
+ #include <stdarg.h>
+ #include <string.h>
++#include <sys/resource.h>
+ 
+ #include "libyubipam.h"
+ 
+diff -Naurp YubiPAM-1.0.4/src/utils/ykvalidate.c YubiPAM-1.0.4.dlucio/src/utils/ykvalidate.c
+--- YubiPAM-1.0.4/src/utils/ykvalidate.c	2008-09-23 02:35:43.000000000 -0500
++++ YubiPAM-1.0.4.dlucio/src/utils/ykvalidate.c	2012-09-22 17:33:57.781042049 -0500
+@@ -31,6 +31,7 @@
+ #include <stdlib.h>
+ #include <string.h>
+ #include <unistd.h>
++#include <sys/resource.h>
+ 
+ #include "ykvalidate.h"
+ #include "libyubipam.h"
