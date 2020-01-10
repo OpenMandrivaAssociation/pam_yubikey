@@ -19,7 +19,7 @@ token. YubiPAM aims to be a simple, easy to configure, module for the Yubikey.
 
 %prep
 %setup -qn YubiPAM-%{version}
-%apply_patches
+%autopatch -p1
 
 %build
 %serverbuild
