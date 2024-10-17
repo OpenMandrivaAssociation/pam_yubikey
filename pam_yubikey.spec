@@ -7,7 +7,7 @@ Version:	1.0.4
 Release:	20
 License:	GPLv2
 Group:		System/Libraries
-Url:		http://www.securixlive.com/yubikey/
+Url:		https://www.securixlive.com/yubikey/
 Source0:	http://www.securixlive.com/download/yubikey/YubiPAM-%{version}.tar.gz
 Patch1:		pam_yubikey-rlimit.patch
 BuildRequires:	pam-devel
